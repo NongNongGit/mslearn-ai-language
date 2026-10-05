@@ -28,7 +28,7 @@ def main():
             text = open(os.path.join(reviews_folder, file_name), encoding='utf8').read()
             print('\n' + text)
 
-            # Get language
+            # Get language try git login
             detectedLanguage = ai_client.detect_language(documents=[text])[0]
             print('\nLanguage: {}'.format(detectedLanguage.primary_language.name))
 
